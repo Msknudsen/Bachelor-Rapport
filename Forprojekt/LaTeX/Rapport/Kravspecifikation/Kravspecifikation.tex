@@ -3,7 +3,14 @@
 	\section{Systembeskrivelse}
 	Systemet består af en database med brugeradgang via en iOS applikation.
 	Databasen indeholder brugere, sager og data om de forskellige projekt registreringer.
-	En registrering kan indeholde; tekst, billeder, GPS lokation og mulighed for at give det en status.			
+	En registrering kan indeholde; tekst, billeder, GPS lokation og mulighed for at give det en status.
+	
+	\subsection{Domain model}
+	Herunder ses et rigt billede af systemet som skal udvikles.
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=1\linewidth]{Kravspecifikation/Domainmodel}
+	\end{figure}	
 	
 	\section{User stories} 
 	Følgende er en beskrivelse kort af user stories til Rambøll's applikation:
@@ -35,15 +42,15 @@
 	
 	\subsection*{GPS Lokation (CRS-6)}
 	Som bruger\\
-	Ønsker jeg at kunne se min position\\
-	For at kunne sætte en præcis lokation på en registreringen
+	Ønsker jeg at kunne se min positionen \\
+	For at kunne sætte en præcis lokation på en registreringen. \\
 	
-	\newpage
 	\section{Ikke-funktionelle krav}
 	\begin{itemize}[-]
 		\itemsep 0.3em 
 		\item Skal kunne tilgås gennem en iOS applikation \textbf{(TRS-1)}
-		\item Der skal anvendes Microsoft og Xarmarin teknologi til udvikling \textbf{(TRS-2)}
-		\item Alle brugere skal kunne anvende systemet på samme tid. Maks antal enheder er 20 på samme tid \textbf{(TRS-3)}
+		\item Der vil blive anvendt Microsoft Visual Studio med et Xarmarin plugin til udvikling af applikationen. \textbf{(TRS-2)}
+		\item Der vil blive anvendt Microsoft SQL udvikling af databasen. \textbf{(TRS-3)}
+		\item Alle brugere skal kunne anvende systemet på samme tid. Maks antal enheder er 20 på samme tid \textbf{(TRS-4)}
 	\end{itemize}
 	
