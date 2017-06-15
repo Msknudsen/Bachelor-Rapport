@@ -3,15 +3,15 @@
 	\section{Systembeskrivelse}
 	Systemet består af en iOS applikation og en database. Brugeradgangen til databasen sker kun gennem iOS applikationen.
 	Databasen indeholder brugere, registreringer med deres tilhørende data.
-	En registrering kan indeholde; tekst, billeder og GPS lokation.
+	En registrering kan indeholde; tekst, billeder og GPS lokation. \\
 	
-	\subsection{Domain model}
-	Herunder ses et rigt billede af systemet som skal udvikles.
+	\section{Aktør-kontekst Diagram}
+	Herunder ses vores aktør-kontekst diagram for systemet
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[width=1\linewidth]{Kravspecifikation/Domainmodel}
-	\end{figure}	
-	
+		\includegraphics[width=0.5\linewidth]{Kravspecifikation/AktoerDiagram}
+	\end{figure}
+		
 	\section{User stories} 
 	Følgende er en kort beskrivelse af user stories til Rambøll's applikation:
 
@@ -21,17 +21,17 @@
 	For at kunne benytte applikationen
 	
 	\subsection*{Opret registrering (CRS-2)}
-	Som ejer\\
+	Som bruger\\
 	Ønsker jeg at kunne oprette en registrering\\
 	For at kunne skrive en kommentar til et byggeprojekt
 	
 	\subsection*{Opdatere registrering (CRS-3)}
-	Som ejer\\
+	Som bruger\\
 	Ønsker jeg at kunne opdatere en registrering\\
 	For at kunne ændringer de oplysninger der er på en given registrering
 	
 	\subsection*{Eksportere registrering (CRS-4)}
-	Som ejer\\
+	Som bruger\\
 	Ønsker jeg at kunne ekspotere en registrering\\
 	For at kunne dele registreringen med andre parter af projektet
 	
@@ -53,4 +53,12 @@
 		%\item Der vil blive anvendt Microsoft SQL udvikling af databasen. \textbf{(TRS-3)}
 		\item Alle brugere skal kunne anvende systemet på samme tid. Maks antal enheder er 20 på samme tid \textbf{(TRS-3)}
 	\end{itemize}
+
+
+	\section{Domain model}
+Herunder ses et rigt billede af systemet som skal udvikles, lavet ud fra vores user stories.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{Kravspecifikation/Domainmodel}
+\end{figure}
 	
